@@ -49,13 +49,11 @@ The website displays GitHub user list that are publicly available on [GitHub API
 
 ### Limitations:
 
-- The current version displays only 5 users on the user list (homepage) due to rate-limits incorporated on the publicly available API, this is handled using pagination and can be edited on the file `filename`.
+- The current version displays only 5 users on the user list (homepage) due to rate-limits incorporated on the publicly available API, this is handled using pagination and can be edited on the file:  `components/UsersList.jsx`.
 
 ```js
 const userDataResponse = await fetch("https://api.github.com/users?per_page=5");
 ```
-
-- To handle viewing of the name from another API which can be fetched with the username available on the `/users` API, `useContext()`
 
 ### Future works
 
